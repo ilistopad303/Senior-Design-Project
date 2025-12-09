@@ -23,7 +23,7 @@ resource "azurerm_windows_virtual_machine" "windows-vm" {
   resource_group_name   = data.azurerm_resource_group.credlock-team-rg.name
   admin_username        = "adminuser"
   admin_password        = "P@ssword1234!"
-  size                  = "Standard_B1s"
+  size                  = "Standard_B2s"
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
