@@ -39,16 +39,16 @@ module "windows_vm" {
   }
 }
 
-module "linux_vm" {
-  source         = "./modules/vm"
-  linux_vm_names = ["credlock-vm3", "credlock-vm4"]
-  subnet_id      = data.azurerm_subnet.subnet.id
-  location       = var.location
-  source_image_reference = {
-    publisher = "Canonical"
-    offer     = "ubuntu-22_04-lts"
-    sku       = "server"
-    version   = "latest"
-  }
-}
+# module "linux_vm" {
+#   source         = "./modules/vm"
+#   linux_vm_names = ["credlock-vm3", "credlock-vm4"]
+#   subnet_id      = data.azurerm_subnet.subnet.id
+#   location       = var.location
+#   source_image_reference = {
+#     publisher = "Canonical"
+#     offer     = "ubuntu-22_04-lts"
+#     sku       = "server"
+#     version   = "latest"
+#   }
+# }
 
